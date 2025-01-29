@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModelInfo>
+	<LODS>
+		<!-- Highest LOD -->
+		<!-- minimum display size in % (should be bounding sphere vertical screen size, sphere will often be slightly larger than you expect) -->
+		<!-- default minSize is 0 -->
+		<LOD minSize="0" 	ModelFile="SwissHead.gltf"/>
+	</LODS>
+	<Behaviors>
+		<Include ModelBehaviorFile="Asobo\Exterior.xml"/>
+		<Component ID="HANDLING">
+			<UseTemplate Name="ASOBO_HANDLING_Elevator_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Elevator_Template">
+				<TRIM_ONLY>True</TRIM_ONLY>
+				<INVERT_ANIM>True</INVERT_ANIM>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Rudder_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Rudder_Template">
+				<TRIM_ONLY>True</TRIM_ONLY>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Aileron_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Flaps_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GT_Recursive_AnimEvents">
+				<ANIM_EVENT_ID>1</ANIM_EVENT_ID>
+				<ANIM_NAME>HANDLING_Flaps_R</ANIM_NAME>
+				<ANIM_EVENT_EFFECT_NAME_1>CAM_FLAPS</ANIM_EVENT_EFFECT_NAME_1>
+				<ANIM_EVENT_EFFECT_NAME_2>CAM_FLAPS01</ANIM_EVENT_EFFECT_NAME_2>
+				<ANIM_EVENT_EFFECT_NAME_3>CAM_FLAPS_Backward</ANIM_EVENT_EFFECT_NAME_3>
+				<ANIM_EVENT_EFFECT_NAME_4>CAM_FLAPS01_Backward</ANIM_EVENT_EFFECT_NAME_4>
+				<NORMALIZED_TIME_1>0</NORMALIZED_TIME_1>
+				<NORMALIZED_TIME_2>25</NORMALIZED_TIME_2>
+				<NORMALIZED_TIME_3>100</NORMALIZED_TIME_3>
+				<NORMALIZED_TIME_4>23</NORMALIZED_TIME_4>
+				<DIRECTION_1>Forward</DIRECTION_1>
+				<DIRECTION_2>Forward</DIRECTION_2>
+				<DIRECTION_3>Backward</DIRECTION_3>
+				<DIRECTION_4>Backward</DIRECTION_4>
+			</UseTemplate>
+		</Component>
+	</Behaviors>
+</ModelInfo>
